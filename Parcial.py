@@ -1,4 +1,9 @@
 from queue import Queue as Cola
+"""ACLARACIONES :: 
+aclaraciones este parcial NO ESTA PERFECTO, lo subo para aportar a la comunidad, la nota fue de 9.28 los ejercicios que generan conflicto son el 3 y el 4 en este ultimo el error es que no considero el caso
+en el que el registro esta vacio y hago una division por 0, y en el 3 el problema es cuando la matriz es de 6*6 
+"""
+
 """
 1) Alerta Enfermedades Infecciosas (3 puntos)
 
@@ -65,7 +70,7 @@ def orden_de_atencion (urgentes: Cola[int], postrgables: Cola[int]) -> Cola[int]
   for urg in lista_urg : 
     urgentes.put(urg)
   for pos in lista_pos: 
-    postergables.put(pos)
+    postrgables.put(pos)
   return nueva_cola
 
 
